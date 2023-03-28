@@ -19,9 +19,18 @@ public class LoadDatabase {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
-                log.info("Preloading "+ restaurantRepository.save(new Restaurant("Chicken Thali",350,1)));
-                log.info("Preloading "+ restaurantRepository.save(new Restaurant("Mutton Thali",350,1)));
+                log.info("Preloading " + restaurantRepository.save(new Restaurant("Chicken Thali", 350, 1)));
+                log.info("Preloading " + restaurantRepository.save(new Restaurant("Mutton Thali", 450, 2)));
+                log.info("Preloading " + restaurantRepository.save(new Restaurant("veg", 150, 3)));
+
+
+
+
+
             }
+
+
         };
+        }
     }
-}
+
